@@ -4,10 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BizTrade – Learn trading the smart way</title>
+<meta name="description" content="BizTrade teaches trading from zero: market basics, candlestick charts, strategies, risk management and psychology, explained step by step for beginners. 100% educational — we never handle your money.">
+<meta name="theme-color" content="#050f2b">
+<meta name="author" content="BizTrade">
+<link rel="canonical" href="https://lankapallibenny.github.io/BizTrade/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BizTrade">
+<meta property="og:title" content="BizTrade – Learn trading the smart way">
+<meta property="og:description" content="Market basics, strategies, tips and tricks explained step by step, made for beginners. Educational only.">
+<meta property="og:url" content="https://lankapallibenny.github.io/BizTrade/">
+<meta property="og:image" content="https://lankapallibenny.github.io/BizTrade/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BizTrade – Learn trading the smart way">
+<meta name="twitter:description" content="Trading education for complete beginners. Educational only — not financial advice.">
+<meta name="twitter:image" content="https://lankapallibenny.github.io/BizTrade/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2318d081'/%3E%3Ctext x='50' y='71' font-family='Poppins,Arial,sans-serif' font-size='62' font-weight='800' text-anchor='middle' fill='%23050f2b'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"BizTrade","url":"https://lankapallibenny.github.io/BizTrade/","description":"Beginner-friendly trading education: market basics, strategies, risk management and trading psychology. Educational only, not financial advice.","email":"bennylankapalli@gmail.com","areaServed":"IN"}
+</script>
 <style>
-:root{--navy:#071a44;--ink:#050f2b;--green:#18d081;--green2:#0b9b60;--mist:#aab4e0;--line:rgba(24,208,129,.45);--card:#0a1b3f;--white:#fff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--navy:#071a44;--ink:#050f2b;--green:#18d081;--green2:#0b9b60;--mist:#aab4e0;--line:rgba(24,208,129,.45);--card:#0a1b3f;--white:#fff}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 *{box-sizing:border-box;margin:0}
 body{font-family:Poppins,system-ui,sans-serif;background:var(--ink);color:var(--white);line-height:1.6;overflow-x:hidden}
@@ -107,16 +126,31 @@ footer{padding:44px 0 56px;border-top:1px solid rgba(255,255,255,.08);color:#8b9
 footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
 .reveal.in{opacity:1;transform:none}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--green);color:var(--ink);font-weight:700;padding:12px 20px;border-radius:0 0 14px 0}
+.skip:focus{left:0}
+.login-card{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;background:var(--card);border:1.5px solid var(--line);border-radius:28px;padding:32px 36px}
+.login-card h3{font-size:clamp(20px,2.6vw,26px);margin-bottom:6px}
+.login-card p{color:var(--mist);font-size:15.5px;margin:0}
+.login-card .cta{opacity:1;animation:none}
+.faq{display:grid;gap:12px;margin-top:44px}
+details{background:var(--card);border:1.5px solid rgba(255,255,255,.1);border-radius:20px;padding:20px 24px;transition:border-color .25s}
+details[open]{border-color:var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--green);font-size:24px;font-weight:700;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mist);margin-top:10px;font-size:15.5px}
 @media(max-width:860px){.links a:not(.btn){display:none}.learn,.contact{grid-template-columns:1fr;gap:36px}.steps{grid-template-columns:1fr 1fr;row-gap:36px}.steps::before{display:none}.list{grid-template-columns:1fr}.orb{display:none}section{padding:80px 0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}h1 span i,.sub,.cta,.hero .note{transform:none;opacity:1}.arrow{stroke-dashoffset:0}.reveal{opacity:1;transform:none}.tick svg{stroke-dashoffset:0}}
 </style>
 </head>
 <body>
+<a class="skip" href="#learn">Skip to content</a>
 <nav><div class="wrap">
   <a class="brand" href="#top" aria-label="BizTrade home">
-    <svg class="logo" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d98d"/><stop offset="1" stop-color="#088454"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#g)"/><path d="M30 28h22c10 0 15 5 15 12 0 5-3 8-7 10 6 2 9 6 9 12 0 9-7 14-17 14H30z M43 38v8h8c3 0 5-1.500 5-4s-2-4-5-4z M43 56v9h9c3 0 5-2 5-4.500s-2-4.500-5-4.500z" fill="#fff" fill-rule="evenodd"/><path d="M60 40l9-9 5 5 10-12" stroke="#fff" stroke-width="3.500" fill="none"/></svg>
+    <svg class="logo" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d98d"/><stop offset="1" stop-color="#088454"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#g)"/><path d="M30 28h22c10 0 15 5 15 12 0 5-3 8-7 10 6 2 9 6 9 12 0 9-7 14-17 14H30z M43 38v8h8c3 0 5-1.500 5-4s-2-4-5-4z M43 56v9h9c3 0 5-2 5-4.500s-2-4.500-5-4.500z" fill="#fff" fill-rule="evenodd"/><path d="M60 40l9-9 5 5 10-12" stroke="#fff" stroke-width="3.500" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Biz<b>Trade</b></a>
-  <div class="links"><a href="#learn">What you learn</a><a href="#path">How it works</a><a href="#safety">Stay safe</a><a class="btn sm" href="#contact">Contact me</a></div>
+  <div class="links"><a href="#learn">What you learn</a><a href="#path">How it works</a><a href="#safety">Stay safe</a><a href="#start">FAQ</a><a class="btn sm" href="#contact">Contact me</a></div>
 </div></nav>
 
 <header class="hero" id="top">
@@ -162,6 +196,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
   <div class="wrap"><h2>We never use or handle your money.</h2><p>BizTrade teaches. You stay in full control of your own account, always.</p></div>
 </div></section>
 
+<section id="start"><div class="wrap">
+  <div class="login-card reveal">
+    <div>
+      <h3>Start with one free lesson.</h3>
+      <p>No payment, no account, no strings. Tell me your level and I’ll send your first lesson plus the starter checklist.</p>
+    </div>
+    <div class="cta"><a class="btn" href="#contact">Get the free starter lesson</a></div>
+  </div>
+  <div class="faq reveal">
+    <h2 style="margin-top:70px">Common <em>questions.</em></h2>
+    <details><summary>Do you trade my money for me?</summary><p>No. BizTrade is purely educational. We never take deposits, manage accounts, or place trades on anyone’s behalf — and you should never share account access, OTPs or funds with anyone who teaches you.</p></details>
+    <details><summary>Do I need money to start learning?</summary><p>No. Everything can be learned on a demo account with zero real money at risk. Only consider live trading later, with money you can genuinely afford to lose.</p></details>
+    <details><summary>Are you SEBI registered?</summary><p>BizTrade provides general education, not personalised investment advice or research recommendations. For that you need a SEBI-registered investment adviser. Always verify a broker’s and an adviser’s registration on the official SEBI website.</p></details>
+    <details><summary>What does it cost?</summary><p>Your first lesson is free. After that, pricing depends on the path you choose — email me and I’ll share the options before anything is agreed.</p></details>
+    <details><summary>Is trading guaranteed profit?</summary><p>No, and anyone who promises fixed or guaranteed returns is a red flag. Most beginner losses come from over-sized positions, no stop-loss, and trading with borrowed money.</p></details>
+  </div>
+</div></section>
+
 <section id="contact"><div class="wrap contact">
   <div class="reveal">
     <h2>Interested? <em>Let’s talk.</em></h2>
@@ -178,7 +230,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
   </form>
 </div></section>
 
-<footer><div class="wrap"><div class="brand">Biz<b>Trade</b></div><div>For education only. Not financial advice. Trading involves risk.</div></div></footer>
+<footer><div class="wrap"><div class="brand">Biz<b>Trade</b></div><div>© <span id="yr">2026</span> BizTrade · For education only. Not financial advice. Trading involves risk.</div></div></footer>
 
 <script>
 (function(){
@@ -203,13 +255,15 @@ function draw(now){var t=still?9999:(now-t0)/1000;x.clearRect(0,0,W,H);var shown
  x.globalAlpha=1;if(!still)requestAnimationFrame(draw)}
 size();addEventListener("resize",size);requestAnimationFrame(draw);
 /* contact form */
+document.getElementById("yr").textContent=new Date().getFullYear();
 var EM="bennylankapalli@gmail.com";
 document.getElementById("f").addEventListener("submit",function(ev){ev.preventDefault();var f=ev.target,d=new FormData(f);
+ if(!d.get("n").trim()||!d.get("e").trim()){document.getElementById("msg").textContent="Please add your name and email.";return;}
  var sub="BizTrade enquiry from "+d.get("n");
  var body="Name: "+d.get("n")+"\nEmail: "+d.get("e")+"\nLevel: "+d.get("l")+"\n\n"+d.get("m");
  var u="mailto:"+EM+"?subject="+encodeURIComponent(sub)+"&body="+encodeURIComponent(body);
- document.getElementById("msg").textContent="Opening your email app. If nothing opens, write to "+EM+" directly.";
- location.href=u});
+ document.getElementById("msg").textContent="Opening your email app… If nothing opens, write to "+EM+" directly.";
+ location.href=u;f.reset();});
 })();
 </script>
 </body>
